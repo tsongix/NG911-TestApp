@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Settings"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Server:"
+                android:id="@+id/serverTitleText"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_column="18"
+                android:layout_gravity="bottom"
+                android:textColorHint="#fffefe"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editServer"
+                android:layout_column="18"
+                android:layout_gravity="bottom|left"
+                android:layout_marginTop="30dp"
+                android:editable="true"
+                android:focusable="true"
+                android:background="#9a9191"
+                android:hint="Server URL"
+                android:text="http://nead.bramsoft.com/ng911_test/"
+                android:layout_marginLeft="0dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Save"
+                android:id="@+id/Savebutton"
+                android:layout_column="19"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
